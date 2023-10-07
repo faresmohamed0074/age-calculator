@@ -1,0 +1,114 @@
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hide{
+    display: none;
+}
+body{
+    background-color: rgba(218, 219, 219, 0.482);
+}
+.container-fluid{
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+.box-container{
+    border-radius: 15px 15px 40% 15px;
+    background-color:white;
+    padding: 30px;
+    height: 500px;
+    width: 550px;
+    position: relative;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    margin-bottom: 3rem;
+}
+.inpt-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.inpt-box label{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.inpt-box{
+    font-size: 12px;
+}
+.error{
+    color: var(--Light-red);
+    border-color: var(--Light-red);
+    
+}
+input{
+    width: 120px;
+    padding: 10px;
+    border: 1px solid rgba(218, 219, 219, 0.582);
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: rgb(218, 219, 219);
+    font-size: 1.4rem;
+}
+.hr{
+    display: flex;
+    position: relative;
+    width: 85%;
+    margin-bottom: 3rem;
+}
+.hr-line{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(218, 219, 219);
+}
+button{
+    background-color: var(--Purple);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color .4s;
+}  
+button:hover{
+    background-color: hsl(259, 99%, 62%);
+}
+.generate-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+    padding-bottom: 2rem;
+}
+.p{
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 0;
+    height: fit-content;
+    height: 70px;
+}
+.p span{
+    color: var(--Purple);
+}
